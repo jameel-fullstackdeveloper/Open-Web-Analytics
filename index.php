@@ -42,6 +42,7 @@ if (!$owa->isOwaInstalled()) {
 if ( $owa->isEndpointEnabled( basename( __FILE__ ) ) ) {
 
     // run controller or view and echo page content
+    
     echo $owa->handleRequestFromURL();
 } else {
 

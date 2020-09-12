@@ -1,5 +1,9 @@
 <?php
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 //
 // Open Web Analytics - An Open Source Web Analytics Framework
 //
@@ -35,22 +39,22 @@
  *
  */
 
-define('OWA_DB_TYPE', 'yourdbtypegoeshere'); // options: mysql
-define('OWA_DB_NAME', 'yourdbnamegoeshere'); // name of the database
-define('OWA_DB_HOST', 'yourdbhostgoeshere'); // host name of the server housing the database
-define('OWA_DB_USER', 'yourdbusergoeshere'); // database user
+define('OWA_DB_TYPE', 'mysql'); // options: mysql
+define('OWA_DB_NAME', 'openwebana'); // name of the database
+define('OWA_DB_HOST', 'localhost'); // host name of the server housing the database
+define('OWA_DB_USER', 'root'); // database user
 define('OWA_DB_PORT', '3306'); // port of database
-define('OWA_DB_PASSWORD', 'yourdbpasswordgoeshere'); // database user's password
+define('OWA_DB_PASSWORD', ''); // database user's password
 
 /**
  * AUTHENTICATION KEYS AND SALTS
  *
  * Change these to different unique phrases.
  */
-define('OWA_NONCE_KEY', 'yournoncekeygoeshere');  
-define('OWA_NONCE_SALT', 'yournoncesaltgoeshere');
-define('OWA_AUTH_KEY', 'yourauthkeygoeshere');
-define('OWA_AUTH_SALT', 'yourauthsaltgoeshere');
+define('OWA_NONCE_KEY', 'G%--.RMGUuCZ`A]}w%P>HP&^mUw-gOPzQ+DK%}t^y.$[+%:/iJ+ARK>LGd^B~0Jb');  
+define('OWA_NONCE_SALT', 'hEIP[Bfa?.JCTX43YC3H7o7XGeRI8Y~Q`DrSRWe/4KF44nD@ dKY)C{blII0;qk?');
+define('OWA_AUTH_KEY', 'tD=TcKi=45O(}P(V..U/u*cvtQz+rcP`#|4b_w3It4LdYJ#vS~<y#@$.WDQ|#zp3');
+define('OWA_AUTH_SALT', 'v2mA]4.L=qeP?;zNI9)gwS,WqElqZZ!J iH0-$SU$5~J-D !@{kMg}9%9LWXa|NH');
 
 /** 
  * PUBLIC URL
@@ -59,7 +63,7 @@ define('OWA_AUTH_SALT', 'yourauthsaltgoeshere');
  * Don't forget the slash at the end.
  */
  
-define('OWA_PUBLIC_URL', 'http://domain/path/to/owa/');  
+define('OWA_PUBLIC_URL', 'http://localhost/owa/');  
 
 /** 
  * OWA ERROR HANDLER
@@ -81,7 +85,7 @@ define('OWA_PUBLIC_URL', 'http://domain/path/to/owa/');
  * Log all php errors to OWA's error log file. Only do this to debug.
  */
 
-//define('OWA_LOG_PHP_ERRORS', true);
+define('OWA_LOG_PHP_ERRORS', true);
  
 /** 
  * OBJECT CACHING
